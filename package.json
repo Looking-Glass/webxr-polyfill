@@ -1,6 +1,6 @@
 {
-  "name": "webxr-polyfill",
-  "version": "2.0.3",
+  "name": "@lookingglass/webxr-polyfill",
+  "version": "0.1.0",
   "homepage": "https://github.com/immersive-web/webxr-polyfill",
   "main": "build/webxr-polyfill.js",
   "module": "build/webxr-polyfill.module.js",
@@ -51,12 +51,20 @@
     "version": "npm run build && git add build/*",
     "postversion": "git push && git push --tags && npm publish"
   },
-  "repository": "immersive-web/webxr-polyfill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immersive-web/webxr-polyfill.git"
+  },
   "bugs": {
     "url": "https://github.com/immersive-web/webxr-polyfill/issues"
   },
   "dependencies": {
     "cardboard-vr-display": "^1.0.19",
     "gl-matrix": "^2.8.1"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "author": "Looking Glass Factory"
 }
